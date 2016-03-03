@@ -1,0 +1,24 @@
+digraph Logic {
+
+    MailFetcher -> getFetchOptions // Between dates etc
+
+    // Mail fetcher
+    getFetchOptions -> fetchMails
+
+    // Logic for getting the invoice
+
+    // Get file for knowing what files we should get
+    fetchMails -> MailHandler -> hasPDF
+    hasPDF -> downloadPDF[label=yes]
+    hasPDF -> printMailToPDF[label=no]
+
+    downloadPDF ->saveFile
+    printMailToPDF -> saveFile
+
+    saveFile -> moveAllFilesToDestination
+    // Get the files to destination
+
+    // Generate filename
+    // HandleMail -> getDate
+
+}
