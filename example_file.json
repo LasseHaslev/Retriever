@@ -1,0 +1,14 @@
+{
+    "licences": [
+        {
+            "name": "Apple",
+            "email": [ "do_not_reply@itunes.com","no_reply@email.apple.com" ],
+            "search": "faktura"
+        },
+        {
+            "name": "One.com",
+            "email": "do_not_reply@itunes.com",
+            "search": "faktura"
+        }
+    ]
+}
